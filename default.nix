@@ -10,13 +10,13 @@
 
 rec {
 
-dfx= pkgs.stdenv.mkDerivation rec {
+dfx = pkgs.stdenv.mkDerivation rec {
   pname = "dfx";
-  version = "0.8.1";
+  version = "0.8.4";
 
   src = fetchTarball {
     url = "https://sdk.dfinity.org/downloads/dfx/${version}/x86_64-linux/dfx-${version}.tar.gz";
-    sha256 = "1ifc7n9kl4rzvhfs9xbbaj9wsnhw0wzlnyjswcgl38mljvkxxvw2";
+    sha256 = "sha256:1cigpzxpk9aksbjbc8ma1yfl295pr23xd9a6wp509wh96pm7s6ya";
   };
 
   nativeBuildInputs = [
